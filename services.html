@@ -23,14 +23,14 @@
 			<h1>API Gateway: Build, deploy, and manage APIs.</h1>
 
 			Amazon API Gateway is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale. APIs act as the "front door" for applications to access data, business logic, or functionality from your backend services. 
-			Using API Gateway, you can create RESTful APIs and WebSocket APIs that enable real-time two-way communication applications. API Gateway supports containerized and serverless workloads, as well as web applications.
+			Using API Gateway, you can create RESTful APIs (representational state transfer) and WebSocket APIs that enable real-time two-way communication applications. API Gateway supports containerized and serverless workloads, as well as web applications.
 
 			API Gateway handles all the tasks involved in accepting and processing up to hundreds of thousands of concurrent API calls, including traffic management, CORS support, authorization and access control, throttling, monitoring, and API version management. 
 			API Gateway has no minimum fees or startup costs. 
 			You pay for the API calls you receive and the amount of data transferred out and, with the API Gateway tiered pricing model, you can reduce your cost as your API usage scales.
 			
 
-			API Types: RESTful & WEBSOCKET
+			API Types: RESTful (representational state transfer) & WEBSOCKET
 				Build RESTful APIs optimized for serverless workloads and HTTP backends using HTTP APIs. HTTP APIs are the best choice for building APIs that only require API proxy functionality. If your APIs require API proxy functionality and API management features in a single solution, API Gateway also offers REST APIs.
 
 				Build real-time two-way communication applications, such as chat apps and streaming dashboards, with WebSocket APIs. API Gateway maintains a persistent connection to handle message transfer between your backend service and your clients.
@@ -114,7 +114,7 @@
 
 			Example: upload static content to an S3 bucket, that will be used as a CLoudFront origin. S3 is a good choice for an Amazon CloudFront origin that includes static content such as images, videos, HTML pages, .css files, and .js files. Navigate to S3 and click Create Bucket button. Next select upload and Add Files. Go to Set permissions tab. You will need to make the image publicly readable (by default, S3 buckets are set to private). 
 
-			Enter the CloudFront cosole: Create Distribution. 
+			Enter the CloudFront console: Create Distribution. 
 			A web distribution specifies configuration settings so CloudFront knows which origin to get your content from when a user requests it. You can use Amazon S3 buckets (storage folders) and HTTP servers (for example, web servers) as an origin. A web distribution is used for static and dynamic content while the RTMP distribution is optimal for streaming media files using Adobe Flash Media Server's RTMP protocol. 
 
 			Configure your web distribution: Once you configure your distribution, CloudFront will create the distribution and propagate it throughout the CloudFront network for you to use.  Select Create Distribution.  
