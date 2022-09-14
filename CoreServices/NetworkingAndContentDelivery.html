@@ -53,7 +53,7 @@
 			API Gateway: Collect and process data in rugged or disconnected edge environments
 	
 	
-			AWS Wavelength: Deliver ultra-low latency application for 5G devices
+			AWS Cloud Map: Cloud Map allows you to register any application resources, such as databases, queues, microservices, and other cloud resources, with custom names. Cloud Map then constantly checks the health of resources to make sure the location is up-to-date.
 	
 	
 			VMware Cloud on AWS: Preferred service for all vSphere workloads to rapidly extend and migrate to the cloud
@@ -66,32 +66,54 @@
 
 		<div>Edge Networking</div>
 	
-			AWS Savings Plan: Flexible pricing model that provides savings of up to 72% on AWS compute usage
+			AWS Cloud Front: Reliable, low latency and high throughput network connectivity. To deliver content to end users with lower latency, Amazon CloudFront uses a global network of 410+ Points of Presence (400+ Edge locations and 13 regional mid-tier caches) in 90+ cities across 48 countries. 
+			Amazon CloudFront, AWS Shield, AWS Web Application Firewall (WAF), and Amazon Route 53 work seamlessly together to create a flexible, layered security perimeter against multiple types of attacks including network and application layer DDoS attacks. All of these services co-reside at the AWS edge and provide a scalable, reliable, and high-performance security perimeter for applications and content. With CloudFront as the “front door” to an application and infrastructure, the primary attack surface is moved away from critical content, data, code and infrastructure.
 	
 	
-			AWS Compute Optimizer: Recommends optimal AWS compute resources for your workloads to reduce costs and improve performance
+			AWS Route 53: scalable Domain Name System (DNS) web service. Route 53 connects user requests to internet applications running on AWS or on-premises. Route end users to the AWS region that provides the lowest possible latency. Route end users to a particular endpoint that you specify based on the end user’s geographic location. Amazon Route 53 offers domain name registration services, where you can search for and register available domain names or transfer in existing domain names to be managed by Route 53.
+			Create a hosted zone that can store DNS records for your domain. Upon creating the hosted zone, you receive four Route 53 name servers across four different Top-Level Domains (TLDs) to help ensure a high level of availability. 
+			Your hosted zone will be initially populated with a basic set of DNS records, including four virtual name servers that will answer queries for your domain. 
 			 
 	
-			AWS Elastic Beanstalk: Easy-to-use service for deploying and scaling web applications and services
+			AWS Global Accelerator: is a networking service that improves the performance of your users’ traffic by up to 60% using Amazon Web Services’ global network infrastructure. When the internet is congested, AWS Global Accelerator optimizes the path to your application to keep packet loss, jitter, and latency consistently low.
 	
 			 
-			EC2 Image Builder: Build and maintain secure Linux or Windows Server images
 			
-			 
-			Elastic Load Balancing (ELB): Automatically distribute incoming application traffic across multiple targets
-
-
 
 
 		<div>Hybrid Connectivity</div>
-			AWS Lambda: Run code without thinking about servers. Pay only for the compute time you consume
+
+			AWS Direct Connect: cloud service is the shortest path to your AWS resources. While in transit, your network traffic remains on the AWS global network and never touches the public internet. This reduces the chance of hitting bottlenecks or unexpected increases in latency.
 
 
+			AWS Site-to-Site VPN: is a fully-managed service that creates a secure connection between your data center or branch office and your AWS resources using IP Security (IPSec) tunnels. When using Site-to-Site VPN, you can connect to both your Amazon Virtual Private Clouds (VPC) as well as AWS Transit Gateway, and two tunnels per connection are used for increased redundancy.
+
+
+			AWS Client VPN is a fully-managed remote access VPN solution used by your remote workforce to securely access resources within both AWS and your on-premises network. Fully elastic, it automatically scales up, or down, based on demand.
+
+
+			AWS Cloud WAN provides a central dashboard for making connections between your branch offices, data centers, and Amazon Virtual Private Clouds (Amazon VPCs). You use network policies to automate network management and security tasks in one location. Cloud WAN generates a complete view of your on-premises and AWS networks to help you monitor network health, security, and performance. 
+			
 
 
 
 		<div>Network Security</div>
-			AWS Lambda: Run code without thinking about servers. Pay only for the compute time you consume
+
+			AWS Shield: is a managed Distributed Denial of Service (DDoS) protection service that safeguards applications running on AWS. AWS Shield provides always-on detection and automatic inline mitigations that minimize application downtime and latency. 2 tiers available: standard and advanced. 
+			All AWS customers benefit from the automatic protections of AWS Shield Standard, at no additional charge. AWS Shield Standard defends against most common, frequently occurring network and transport layer DDoS attacks that target your web site or applications. When you use AWS Shield Standard with Amazon CloudFront and Amazon Route 53, you receive comprehensive availability protection against all known infrastructure (Layer 3 and 4) attacks.
+
+
+			AWS Web Application Firewall (WAF): is a web application firewall that helps protect your web applications or APIs against common web exploits and bots that may affect availability, compromise security, or consume excessive resources. AWS WAF gives you control over how traffic reaches your applications by enabling you to create security rules that control bot traffic and block common attack patterns, such as SQL injection or cross-site scripting. You can also customize rules that filter out specific traffic patterns.
+			You can deploy AWS WAF on Amazon CloudFront as part of your CDN solution, the Application Load Balancer that fronts your web servers or origin servers running on EC2, Amazon API Gateway for your REST APIs, or AWS AppSync for your GraphQL APIs. With AWS WAF, you pay only for what you use and the pricing is based on how many rules you deploy and how many web requests your application receives.
+
+
+			AWS Network Firewall: is a managed service that makes it easy to deploy essential network protections for all of your Amazon Virtual Private Clouds (VPCs).
+
+
+			AWS Firewall Manager is a security management service which allows you to centrally configure and manage firewall rules across your accounts and applications in AWS Organizations. 
+			
+
+
 
 
 </body>
