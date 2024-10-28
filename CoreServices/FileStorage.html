@@ -4,13 +4,25 @@
 <body>
 
 	<h1>Core Services: </h1>
-		<div>S3</div>
-		<div>Glacier</div>
-		<div>Glacier Deep Archive</div>
-		<div>Elastic Block Store</div>
-		<div>Elastic File System</div>
-		<div>Snowball and SnowMobile</div>
-		<div>Windows </div>
+		<div>S3: stores files as objects in buckets. Different storage classes for different uses. Stores accross multiple az's. Enables URL access for objects stored in the bucket. Configureable rules for data lifecycle. Can serve as a static webhost. S3 Standard is the default storage class. Intelligent-Tiering will move your data to the correct storage class based on usage. Standard IA- infrequently accessed data with standard resiliance. S3 One-Zone-IA: infrequently accessed data stored in one AZ.  </div>
+
+		<div>Glacier: designed for archival data. 90 Day min storage duration change. Can be retrieved in min or hours. You pay a retrieval fee per GB retrieved. Over 5 times less expensive than S3 Standard storage class.  </div>
+
+		<div>Glacier Deep Archive: designed for archival data. 180 day min storage duration change. Can be retrieved in hours. You pay a retrieval fee per GB retrieved. Over 23 times less expensive than S3 Standard storage class. </div>
+
+		<div>Elastic Block Store: persistant block storage that can scale up to petabytes of data with a single EC2 instance. Redundancy within an AZ. ALlows users to take snapshots of data for BU purposes. Offers encryption, not by default. Multiple volume types: SSD (for general workloads), provisioned IOPS SSD (high performance volume for low latency apps), throughput optimized HDD (for frequently accessed data). </div>
+
+		<div>Elastic File System: use with Linux workloads. Supports/stores up to petabytes of data accross multiple az's. Two different storage classes: Standard and Infrequesnt Access.  </div>
+
+		<div>Snowball: to physically move petabyte scale data to AWS via physical device sent to you, upload then send back via local carrier.  </div>
+
+		<div>SnowMobile: to physically migrate exobyte scale data onto AWS via shipping container on truck. </div>
+
+		<div>Amazon FSx for Windows file server
+			<div>Fully Managed native windows file system</div>
+			<div>Utilizes SSD drives for low latency/SMB support/NTFS/Active Directory integration. </div>
+		</div>
+
 
 
 
