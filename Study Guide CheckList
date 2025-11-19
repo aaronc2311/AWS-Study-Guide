@@ -1,0 +1,72 @@
+Study Guide CheckList
+
+
+Compute
+EC2: Know uses, instance types, pricing, auto-scaling, and basics of launching/stopping servers.
+
+Lambda: Recognize serverless, pay-per-use, event-driven integrations.
+
+Elastic Beanstalk: App deployment automation, supports multiple languages.
+
+
+Storage
+S3: Object storage, buckets, versioning, durability, common use cases (backups, data lakes, media storage).
+
+EBS: Block storage for EC2, persistence, snapshot backups.
+
+EFS: Managed NFS, scalable file storage for Linux, shared access.
+
+
+
+Database
+RDS: Managed SQL (Postgres, MySQL, etc.), backups, scaling, multi-AZ.
+
+DynamoDB: Managed NoSQL, fast, scalable, pay-per-request.
+
+Redshift: Data warehouse, analytics, BI integrations.
+
+
+
+Networking & Content Delivery
+VPC: Isolated network, subnets, security groups, NAT gateway.
+
+CloudFront: CDN, speeds up static/dynamic content delivery globally.
+
+ELB (Elastic Load Balancer): High availability, balances incoming traffic.
+
+Route 53: DNS, health checks, domain registration.
+
+
+
+Security & Identity
+IAM: Users/groups/roles, permissions and policies, principle of least privilege.
+
+KMS: Key management and encryption basics.
+
+WAF/Shield: DDoS and web attack protections.
+
+
+
+Monitoring & Management
+CloudWatch: Log/metric collection, alarms, monitoring dashboards.
+
+CloudTrail: API activity auditing, resource change tracking.
+
+Trusted Advisor: Best practice checks (security, cost, performance).
+
+
+
+Messaging & Integration
+SNS: Pub-sub notifications and alerts.
+
+SQS: Message queue for distributed processing.
+
+Step Functions: Serverless workflow orchestration basics.
+
+Global Infrastructure: Regions, Availability Zones, Edge Locations.
+
+
+Security Model: Shared responsibility, basic compliance hints.
+
+
+Billing Basics: On-demand vs. reserved pricing; cost management tools (Cost Explorer, Budgets).
