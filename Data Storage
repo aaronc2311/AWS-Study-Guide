@@ -1,29 +1,95 @@
-	<div>
-		<h1>S3</h1>
-	</div>
+S3 (Simple Storage Service)
+What it is: Object storage for files, backups, app data, websites.
+
+Key features: Buckets and objects, globally unique bucket names, durability across multiple AZs.
+
+Storage classes & pricing (per GB per month):
+
+S3 Standard: $0.023 (frequently accessed data).
+
+S3 Standard-IA: $0.0125 (infrequent, still fast access).
+
+S3 One Zone-IA: $0.01 (infrequent, single AZ).
+
+S3 Glacier Instant Retrieval: $0.004 (cheap, near-instant archives).
+
+S3 Glacier Flexible Retrieval: ~$0.0036 (slow/cheaper, minutes-to-hours to access).
+
+S3 Glacier Deep Archive: $0.00099 (lowest cost, retrieval takes up to 48 hours).
+
+Tip with answer:
+“Which S3 class is best for long-term data that’s rarely retrieved, at the lowest cost?”
+Answer: S3 Glacier Deep Archive.​
 
 
-	<div>
-		<h1>S3</h1>
-	</div>
+
+EBS (Elastic Block Store)
+What it is: Persistent block storage for EC2, like a hard drive.
+
+Key features: Tied to single AZ, can snapshot/restore, supports different performance types.
+
+Pricing (per GB per month):
+
+General Purpose SSD (gp3): $0.08.
+
+General Purpose SSD (gp2): $0.10.
+
+Provisioned IOPS SSD (io1/io2): $0.125 plus IOPS fees.
+
+Throughput Optimized HDD (st1): $0.045.
+
+Cold HDD (sc1): $0.015.
+
+Tip with answer:
+“Which storage is persistent, can be used as boot volumes for EC2, and supports snapshots?”
+Answer: Amazon EBS.
 
 
-	<div>
-		<h1>S3</h1>
-	</div>
+
+EFS (Elastic File System)
+
+Key features: NFS access, shared by multiple EC2 instances, auto-scaling.
+
+Pricing (per GB per month):
+
+EFS Standard: $0.30 (frequent access).
+
+EFS Infrequent Access: $0.016.
+
+EFS Archive: $0.008.
+
+Tip with answer:
+“Which storage lets multiple EC2 instances share files and grows/shrinks automatically?”
+Answer: Amazon EFS.
 
 
-	<div>
-		<h1>S3</h1>
-	</div>
+
+RDS (Relational Database Service)
+What it is: Managed SQL databases (e.g., MySQL, PostgreSQL).
+
+Pricing info: You pay for underlying storage and compute. Common storage cost is $0.115/GB/month for general-purpose SSD.
 
 
-	<div>
-		<h1>S3</h1>
-	</div>
 
+Exam Tips: 
+“Which AWS service provides fully managed, scalable SQL databases?”
+Answer: Amazon RDS (Relational Database Service)
 
-	<div>
-		<h1>Ajjjjmazon FSx:</h1>
-		Amazon FSx offers fully managed THIRD PARTY file systems: lets you choose between four widely-used file systems: NetApp ONTAP, OpenZFS, Windows File Server, and Lustre. 
-	</div>
+General Exam Tips with Answers
+Need to store large, unstructured data files accessed from anywhere?
+Answer: Amazon S3.
+
+Need to attach a persistent disk to a single EC2 instance, which survives reboots?
+Answer: Amazon EBS (Elastic Block Store)
+
+Need a shared drive that can be accessed simultaneously by many EC2 instances?
+Answer: Amazon EFS.
+
+What is the cheapest AWS storage option for archiving data you’ll rarely access, possibly once per year?
+Answer: S3 Glacier Deep Archive – as low as $0.00099 per GB per month.
+
+Which storage type is best for hosting databases on EC2?
+Answer: EBS – because it provides block-level storage with strong performance and durability.
+
+Scenario: You have regulatory requirements to keep data for 10+ years at minimal cost. Which storage?
+Answer: S3 Glacier Deep Archive.
