@@ -5,9 +5,84 @@
 
 	<h1>Core Services: </h1>
 		<div>RDS</div>
+		Amazon RDS (Relational Database Service)
+		What it is: Managed SQL database (supports MySQL, PostgreSQL, MariaDB, Oracle, SQL Server).
+		
+		Key features: Automated backups, patching, scaling, multi-AZ for failover, read replicas for scaling reads.
+		
+		Pricing: Pay for instance size (CPU/RAM), storage used, and I/O, with on-demand or reserved instance options (up to 70% savings).
+		
+		Exam tip with answer:
+		“Which AWS service provides managed, scalable SQL (relational) databases?”
+		Answer: Amazon RDS.
+				
+		When to use: High consistency, transactions, complex queries, and relational data.
+
+
+
 		<div>DynamoDB</div>
+		Amazon DynamoDB
+		What it is: Managed NoSQL, key-value and document database, scales to millions of requests/sec.
+		
+		Key features: Single-digit millisecond latency, on-demand or provisioned capacity, automatic scaling, built-in security, backup/restore, global tables.
+		
+		Pricing: On-demand or provisioned (lower rates); reserved capacity can save up to 77% for long-term commitments.
+		
+		Exam tip with answer:
+		“Which AWS service provides a fast, scalable NoSQL database with single-digit millisecond latency?”
+		Answer: DynamoDB.
+		
+		When to use: Flexible schema, massive scale, high throughput, serverless backend, IoT, mobile/web apps.
+		
+		Caching: Use DAX (DynamoDB Accelerator) for microsecond, in-memory caching.
+
+
+
 		<div>Elasticache</div>
+		Amazon ElastiCache
+		What it is: Ultra fast managed in-memory cache using Redis or Memcached engines.
+		
+		Key features: Sub-millisecond latency, distributed, scales easily, integrated for caching reads from RDS/DynamoDB to improve performance; supports clustering and replicas.
+		
+		Pricing: Pay per node instance hour (e.g., cache.m5.large: ~$0.156/hr plus data transfer); reserved node pricing saves further.
+		
+		Exam tip with answer:
+		“Which AWS service improves database performance and saves cost for read-heavy workloads by caching data in memory?”
+		Answer: ElastiCache.
+		
+		When to use: Hot, frequently-read data, reduce latency for web apps, gaming leaderboards, session storage.
+
+
+
 		<div>Redshift</div>
+		Amazon Redshift
+		What it is: Managed cloud data warehouse for large-scale analytics (OLAP), petabyte scale, columnar storage.
+		
+		Key features: Columnar storage (fast queries), massively parallel processing (MPP), integrates with business intelligence tools.
+		
+		Pricing: Pay per node (compute cluster), plus storage; reserved node costs save up to 75%.
+		
+		Exam tip with answer:
+		“Which AWS service is best for analyzing petabytes of structured data and running complex queries?”
+		Answer: Amazon Redshift.
+		
+		When to use: Big data analytics, business intelligence, reporting.
+		
+		Redshift vs RDS: RDS for transactions, Redshift for analytics.
+
+
+		Exam Tips: 
+		If asked about read-heavy applications needing faster performance:
+		Answer: Add ElastiCache to cache results and reduce load on primary database.
+		
+		If asked how to scale millions of transactions per second, flexible schema:
+		Answer: Use DynamoDB.
+		
+		If asked about backup and failover for relational databases:
+		Answer: Enable RDS Multi-AZ for failover, use read replicas for scaling reads.
+		
+		If asked for the analytics solution over terabytes and petabytes of data:
+		Answer: Use Amazon Redshift.
 
 </body>
 </html>
