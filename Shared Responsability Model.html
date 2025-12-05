@@ -12,6 +12,109 @@
 
 	</div>
 
+	The shared responsibility model says AWS and the customer split security and compliance duties: AWS secures the cloud itself, and customers secure what they run and store in the cloud.​
+
+Core idea and exam phrase
+AWS is responsible for security of the cloud (infrastructure, hardware, managed services platform).
+
+Customers are responsible for security in the cloud (configuring services securely, protecting data, identities, and applications).
+
+Exam tip (answer):
+“If a question says ‘security of the cloud vs security in the cloud’, who owns which?”
+Answer: AWS = security of the cloud; customer = security in the cloud.
+
+What AWS is responsible for
+AWS responsibilities mainly cover the underlying platform:
+
+Physical facilities and data centers (building security, power, HVAC).
+
+Hardware, networking, and virtualization layer (servers, storage devices, routers, hypervisor).
+
+Core managed infrastructure services and their OS/platform layer (for example, the underlying OS for S3, DynamoDB, RDS hosts).
+
+Exam tip (answer):
+“Who is responsible for securing AWS data center facilities and physical hosts?”
+Answer: AWS is responsible for physical security and infrastructure security.
+
+What the customer is responsible for
+Customer responsibilities always include:
+
+Data: classification, encryption choices, backup strategy, access control to data.
+
+Identity & access: IAM users, groups, roles, policies, MFA, least-privilege access.
+
+Application security: code, libraries, app configs, secret management, app-level encryption.
+
+Resource configuration: network rules (security groups, NACLs), S3 bucket policies, logging settings.
+
+Compliance & training: mapping controls, staff training, internal processes and audits.
+
+Exam tip (answer):
+“If a question asks who must correctly configure S3 bucket permissions or security groups?”
+Answer: The customer is responsible for secure configuration of its AWS resources.
+
+How it changes by service type
+The more managed the service, the more AWS does—but the customer always owns data and permissions.
+
+IaaS (e.g., EC2):
+
+AWS: physical hosts, networking, hypervisor.
+
+Customer: guest OS patching, OS firewall, applications, data, security groups.
+
+
+PaaS / managed DB (e.g., RDS, DynamoDB):
+
+AWS: infrastructure, DB engine installation, host OS, some patching/backup mechanics.
+
+Customer: schema design, user accounts inside DB, query security, data protection, IAM access.
+
+
+Fully managed/abstracted (e.g., S3, Lambda):
+
+AWS: infrastructure, platform OS, runtime environment.
+
+Customer: code (for Lambda), data, access policies, encryption settings, bucket/function configuration.
+
+
+Exam tip (answer):
+“On EC2, who patches the guest operating system?”
+Answer: The customer patches the EC2 guest OS; AWS handles the underlying infrastructure.
+
+Exam tip (answer):
+“For S3 and DynamoDB, what is the customer always responsible for?”
+Answer: Managing data (including classification and encryption) and access permissions via IAM and resource policies.
+
+
+Shared / overlapping controls
+Some controls are shared: AWS does part; the customer completes it.
+
+Patch management: AWS patches infrastructure; customers patch guest OS, apps, and dependencies.
+
+Configuration management: AWS configures its internal devices; customers configure their own OS, DBs, applications, and service settings.
+
+Awareness & training: AWS trains its staff; customers train their own staff.
+
+
+Exam tip (answer):
+“When a control is ‘shared’ (like patch management), what does that mean?”
+Answer: AWS patches the underlying cloud infrastructure; customers patch their own operating systems, applications, and configurations.
+
+Typical exam scenarios with answers
+Use these as mental flashcards:
+
+“A company misconfigured an S3 bucket and exposed data. Under the shared responsibility model, who is responsible?”
+Answer: The customer is responsible for securely configuring S3 bucket permissions and protecting its data.
+
+“Who is responsible for enabling encryption of data at rest in S3 or RDS?”
+Answer: The customer chooses and configures encryption options; AWS provides the mechanisms and manages underlying infrastructure.
+
+“Who is responsible for IAM user management and enabling MFA?”
+Answer: The customer manages IAM identities and MFA for its AWS accounts.
+
+“What benefit does the shared responsibility model give customers?”
+Answer: It offloads physical and infrastructure security to AWS while letting customers focus on securing their data, identities, and configurations.
+
 
 
 
