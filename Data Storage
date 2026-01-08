@@ -93,3 +93,25 @@ Answer: EBS – because it provides block-level storage with strong performance 
 
 Scenario: You have regulatory requirements to keep data for 10+ years at minimal cost. Which storage?
 Answer: S3 Glacier Deep Archive.
+
+
+
+You should be able to choose quickly:
+
+Large object store, accessed over HTTP → S3.
+
+Block storage for EC2, needs low‑latency disk → EBS.
+
+Shared POSIX file system for multiple EC2 instances → EFS.
+
+Long‑term archive, rarely accessed data → S3 Glacier Deep Archive.
+
+For databases:
+
+Relational, SQL, transactions → RDS.
+
+Key‑value/NoSQL, massive scale → DynamoDB.
+
+Analytics/OLAP, petabyte‑scale warehouse → Redshift.
+
+In‑memory caching to speed reads → ElastiCache.

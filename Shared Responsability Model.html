@@ -117,7 +117,17 @@ Answer: It offloads physical and infrastructure security to AWS while letting cu
 
 
 
+You should be crystal clear that:
 
+AWS handles security of the cloud: data centers, physical hosts, networking, hypervisor.
+
+Customers handle security in the cloud: IAM, OS and application patching (on EC2), data encryption choices, S3 bucket policies, security groups, NACLs.
+
+Practice answering:
+
+Misconfigured S3 bucket or open security group → always the customer’s responsibility.
+
+Patching EC2 guest OS → customer; patching underlying infrastructure → AWS.
 
 
 
