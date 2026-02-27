@@ -5,7 +5,32 @@
 </head>
 <body>
 
-	<div>https://aws.amazon.com/products/storage/</div>
+	<div>
+		Object storage – S3 and Glacier
+		Amazon S3 (Simple Storage Service): Object storage for virtually unlimited data, accessed over HTTP/HTTPS via APIs or URLs. It’s ideal for backups, data lakes, static websites, logs, and application assets.
+		
+		S3 storage classes: Standard (frequent access), Standard‑IA, One Zone‑IA, Glacier Instant, Glacier Flexible Retrieval, Glacier Deep Archive for progressively colder/cheaper storage with higher retrieval cost/latency.
+		
+		Key ideas: Buckets and objects, 11 9s durability, lifecycle policies (automatic tiering to Glacier), server‑side encryption, bucket policies.
+	</div>
+
+		<div>
+		File storage – EFS and FSx
+		Amazon EFS (Elastic File System): Managed, POSIX‑compliant file system for Linux, shared across many EC2 instances in a region. It auto‑scales capacity and is good for web/app servers that need shared files.
+		
+		Amazon FSx: Managed high‑performance file systems (e.g., Windows FSx for Windows File Server, FSx for Lustre) for specialized workloads 	needing Windows semantics or HPC file systems.
+	</div>
+
+	<div>
+		Archive storage – S3 Glacier family
+		S3 Glacier services: Ultra‑low‑cost storage for archives where access is rare and slower retrieval is acceptable.
+		
+		Tiers differ by retrieval time and price: Instant Retrieval (fast, more expensive), Flexible Retrieval (minutes‑hours), Deep Archive (hours‑days, cheapest).
+		
+		Exam example (answer):
+		“Cheapest option for compliance archives you might never read again.”
+		Answer: S3 Glacier Deep Archive.
+	</div>
 
 	
 
