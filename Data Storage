@@ -1,3 +1,23 @@
+
+
+s3 security: IAM policies assigned to each bucket, bucket policy for puiblic access, 
+s3 websites: you can use objects in buckets as a static website 
+s3 versioning: prevent accidental deletes
+s3 replication: same-region or cross region, must enable versioning
+s3 storage classes: standard, IA (infrequent access) intelligent, Glacier: instant flexiable and deep
+Snowball: import data onto physical device, includes edge computing
+Storage gateway: hybrid solution to extend on prem storage to s3
+
+
+
+
+
+
+
+
+
+
+
 S3 (Simple Storage Service)
 What it is: Object storage for files, backups, app data, websites.
 

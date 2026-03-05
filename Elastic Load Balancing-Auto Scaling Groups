@@ -1,0 +1,12 @@
+Elastic Load Balancing
+High availablity vs scalability vs elasticity cvs agility in the cloud
+
+ELB's: distribute traffic accross backend ec2 instances, can be multi-AZ
+supports health checks
+4 types: classic or old, application (HTTP - L7), Network (TCP - L4), Gateway (L3) 
+
+
+
+
+
+Auto Scaling Groups
